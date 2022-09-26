@@ -13,42 +13,63 @@
     <!-- Fin Bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="flipping_gallery.css">
-</head>
+
+
+
+      <!--Nav-->
+      <link rel="stylesheet" type="text/css" href="css/acgp/nav.css">
+      <script src="js/nav/nav.js"></script>
+
+       <!--Video-->
+      <link rel="stylesheet" type="text/css" href="css/acgp/video.css">
+
+      <!--Body-->
+    <link rel="stylesheet" type="text/css" href="css/acgp/body.css">
+
+     <!--Card-->
+     <link href="css/acgp/card.css" rel="stylesheet" type="text/css">
+    </head>
 <body>
     
-    <div class="container-fluid"style="background-color: #1E3C44c0;">
-        <nav class="navbar navbar-expand-lg">
-            <img class="d-flex justify-content-center" src="./assets/img/acgp-logo.png" alt="ACGP" style="height: 60px;">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto " >
-                <li class="nav-item active">
-                  <a class="nav-link" href="#" style="color: white; font-size: 24px;">Servicios </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" style="color: white; font-size: 24px;">Clientes</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" style="color: white; font-size: 24px;">Quienes somos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: white; font-size: 24px;">Únete</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: white; font-size: 24px;">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </nav>     
-        </div>
+  <header >
+		<a href="#" class="logo">     
+       <img class="d-flex justify-content-center" src="./assets/img/acgp-logo.png" alt="ACGP" style="height: 60px;">
+    </a>
+    <nav class="navbar navbar-expand-lg">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto " >
+          <li class="nav-item active">
+            <a class="nav-link" href="#ServiciosId" style="color: white; font-size: 24px;">Servicios </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ClientesId" style="color: white; font-size: 24px;">Clientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#SomosId" style="color: white; font-size: 24px;">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#UneteId" style="color: white; font-size: 24px;">Únete</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#ContactoId" style="color: white; font-size: 24px;">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>     
+	</header>
 
-    <div class="container-fluid">
-        <video src="./assets/video/jumpitt.mp4" type="video/mp4" autoplay controls width="1230px"></video>
-    </div>
-    <br/>
+	<section>
+    
+    <video autoplay muted loop id="myVideo">
+      <source src="./assets/video/jumpitt.mp4" type="video/mp4">
+    </video>
+
+  </section >
+  <section class="sr-only sr-only-focusable Separador" id="ServiciosId">
     <div class="container">
         <div class="row">
             <h3 class="col-4" style="color: #295861;">Servicios</h3>
@@ -131,6 +152,7 @@
           </div>
         </div>
     </div>
+  </section>
     <br/>
     <div class="container-fluid">
         <div class="row">
@@ -139,12 +161,73 @@
         </div>
     </div>
     <br/>
+
+    <section>
+
+      imagenes
+    </section>
+    <section>
     <div class="container-fluid">
         <div class="row">
             <h3 class="d-flex justify-content-center" style="color: #295861;">Experiencia</h3>
             <p class="d-flex justify-content-center">Desde 1991 hemos desarrollado miles de aplicaciones computacionales y piezas de software para las industrias</p>
         </div>
     </div>
+  </section>
+    <section >
+      <div class="container" style="text-align:center ;">
+      <div class="flip">
+        <div class="front" style="background-image: url(https://fp.andel.es/wp-content/uploads/2018/04/informacije-2.jpg)">
+          <h1 class="text-shadow">Servicio 1</hi>
+        </div>
+        <div class="back">
+          <h2>Angular</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<p><b><a class="categoria">Más información</a></b> </p></p>
+        </div>
+      </div>
+      <div class="flip">
+        <div class="front" style="background-image: url(https://fp.andel.es/wp-content/uploads/2018/04/informacije-2.jpg)">
+          <h1 class="text-shadow">Servicio 1</hi>
+        </div>
+        <div class="back">
+          <h2>Angular</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<p><b><a class="categoria">Más información</a></b> </p></p>
+        </div>
+      </div>
+      <div class="flip">
+        <div class="front" style="background-image: url(https://fp.andel.es/wp-content/uploads/2018/04/informacije-2.jpg)">
+          <h1 class="text-shadow">Servicio 1</hi>
+        </div>
+        <div class="back">
+          <h2>Angular</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<p><b><a class="categoria">Más información</a></b> </p></p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+  <section >
+    <div class="container" style="text-align:center ;">
+    <div class="flip">
+      <div class="front" style="background-image: url(https://fp.andel.es/wp-content/uploads/2018/04/informacije-2.jpg)">
+        <h1 class="text-shadow">Servicio 1</hi>
+      </div>
+      <div class="back">
+        <h2>Angular</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<p><b><a class="categoria">Más información</a></b> </p></p>
+      </div>
+    </div>
+    <div class="flip">
+      <div class="front" style="background-image: url(https://fp.andel.es/wp-content/uploads/2018/04/informacije-2.jpg)">
+        <h1 class="text-shadow">Servicio 1</hi>
+      </div>
+      <div class="back">
+        <h2>Angular</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<p><b><a class="categoria">Más información</a></b> </p></p>
+      </div>
+    </div>
+  </div>
+  </section>
     <br/>
     <div class="container-fluid quienes-somos">
         <div class="container">
@@ -184,8 +267,41 @@
     </div>
     <br/>
     <div class="container">
-        <div class="row d-flex justify-content-center">
-            <h3 style="color: #295861;">Contacto</h3>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center mt-3 mb-4">
+              <h3 style="color: #295861;">Contactanos</h3>
+            </div>
+            <div class="col-6">
+              <form>
+                <div class="form-group mb-2">
+                  <label for="formGroupExampleInput">Nombre y Apellido</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group mb-2">
+                  <label for="formGroupExampleInput2">Teléfono</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group mb-2">
+                  <label for="formGroupExampleInput">Correo electrónico</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Asunto</label>
+                  <input type="text" class="form-control">
+                </div>
+              </form>
+            </div>
+            <div class="col-6">
+              <form>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Mensaje</label>
+                  <textarea class="form-control" id="textAreaExample1" rows="10"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-4 mb-5">
+              <button type="button" class="btn btn-outline-primary">Enviar</button>
+            </div>
         </div>
     </div>
 
