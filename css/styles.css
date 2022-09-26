@@ -161,3 +161,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .quienessomos-text {
 	margin-top: 100px;
 }
+ 
+.fondo-unete {
+	background-image: url(../assets/img/fondo-unete.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 500px;
+}
+
+.fondo-text-unete {
+	background-color: #ffffffda;
+	border-radius: 10px;
+	margin-top: 150px;
+}
