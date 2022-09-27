@@ -10,7 +10,7 @@ header{
     display: flex;
     justify-content: space-around;
     transition: 0.7s;
-    padding: 10px 0px;
+    padding: 20px 0px;
     z-index: 10;
     background-color: #1E3C44c0;
 }
@@ -58,4 +58,8 @@ header.abajo .logo,
 header.abajo ul li a{
     color: #000;
 }
+
+
+
+
 

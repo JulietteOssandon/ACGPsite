@@ -6,19 +6,19 @@
     <title>ACGP ingenieria en informática</title>
     <!--Jquery-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="jquery.flipping_gallery.js"></script>
+    <script src="js/nav/jquery.flipping_gallery.js"></script>
     <script src="js/main.js"></script>
     <!-- Inicio Bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!-- Fin Bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" href="flipping_gallery.css">
-
+    <!-- <link rel="stylesheet" href="flipping_gallery.css"> -->
 
 
       <!--Nav-->
-      <link rel="stylesheet" type="text/css" href="css/acgp/nav.css">
-      <script src="js/nav/nav.js"></script>
+      <link rel="stylesheet" href="css/acgp/leadmark.css">
+      <script src="js/nav/leadmark.js"></script>
+      <!-- <script src="js/nav/nav.js"></script> -->
 
        <!--Video-->
       <link rel="stylesheet" type="text/css" href="css/acgp/video.css">
@@ -31,53 +31,91 @@
 
       <!--Slider-->
       <link href="css/acgp/slider.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    
     </head>
 <body>
     
-  <header >
-		<a href="#" class="logo">     
-       <img class="d-flex justify-content-center" src="./assets/img/acgp-logo.png" alt="ACGP" style="height: 60px;">
-    </a>
-    <nav class="navbar navbar-expand-lg">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto " >
-          <li class="nav-item active">
-            <a class="nav-link" href="#ServiciosId" style="color: white; font-size: 24px;">Servicios </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#ClientesId" style="color: white; font-size: 24px;">Clientes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#SomosId" style="color: white; font-size: 24px;">Quienes somos</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#UneteId" style="color: white; font-size: 24px;">Únete</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#ContactoId" style="color: white; font-size: 24px;">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </nav>     
-	</header>
+    <!-- page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10" style="background: #1E3C44c0;border-color: #1E3C44c0;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/acgp-logo.png" alt="">
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">                     
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service" style="color: white;">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" style="color: white;">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio" style="color: white;">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog" style="color: white;">Únete</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" style="color: white;">Contacto</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="components.html" class="ml-4 nav-link btn btn-primary btn-sm rounded">Components</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Second Navigation -->
 
-	<section>
-    
-    <video autoplay muted loop id="myVideo">
-      <source src="./assets/video/jumpitt.mp4" type="video/mp4">
-    </video>
+    <!-- Page Header -->
+    <header class="header">
+        <video autoplay muted loop id="myVideo">
+            <source src="./assets/video/jumpitt.mp4" type="video/mp4">
+          </video>
+        <div class="overlay">
+            <h1 class="subtitle"></h1>
+            <h1 class="title"></h1>  
+        </div>  
+        <div class="shape">
+            <svg viewBox="0 0 1500 200">
+                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
+            </svg>
+        </div>  
+    </header> 
 
-  </section >
-  <section class="sr-only sr-only-focusable Separador" id="ServiciosId">
+    <!-- <header class="header">
+      <div class="overlay">
+          <h1 class="subtitle">LeadMark Landing Page</h1>
+          <h1 class="title">We Are Creative</h1>  
+      </div>  
+      <div class="shape">
+          <svg viewBox="0 0 1500 200">
+              <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
+          </svg>
+      </div>  
+      <div class="mouse-icon"><div class="wheel"></div></div>
+  </header> -->
+  <!-- End Of Second Navigation -->
+
+  <!--Servicios-->
+  <section  id="service" class="section pt-0">
     <div class="container">
+        <h6 class="section-title text-center" style="color: #295861;">Servicios</h6>
+        <h6 class="section-subtitle text-center mb-5 pb-3">Apoyamos tus iniciativas construyendo aplicaciones computacionales y entregando servicios TI que aporten valor a tu negocio, duraderos y de calidad.</h6>
         <div class="row">
-            <h3 class="col-4" style="color: #295861;">Servicios</h3>
-            <p class="col-8">Apoyamos tus iniciativas construyendo aplicaciones computacionales y entregando servicios TI que aporten valor a tu negocio, duraderos y de calidad</p>
-            <div class="contenedor">
+             <div class="contenedor">
                 <div class="contenedor-cards">            
                   <div class="contenedor-card-item">
                         <div class="contenedor-card-item-wrapper">
@@ -156,15 +194,12 @@
         </div>
     </div>
   </section>
-    <section class="sr-only sr-only-focusable Separador">
-        <div class="row">
-            <h3 class="d-flex justify-content-center" style="color: #295861;" id="ClientesId">Clientes</h3>
-            <p class="d-flex justify-content-center">Creamos experiencias increibles junto a</p>
-        </div>
-    </div>
-    <br/>
-
-    <section>
+  <!--Servicios-->
+  <!--Clientes-->
+  <section  id="client" class="section pt-0" style="background-color: white;">
+  <div class="container-fluid">
+      <h6 class="section-title text-center" style="color: #295861;">Clientes</h6>
+      <h6 class="section-subtitle text-center mb-5 pb-3">Creamos experiencias increibles junto a.</h6>
       <div class="slider">
         <div class="slide-track">
           <div class="slide">
@@ -235,8 +270,7 @@
           </div>
         </div>
       </div>
-    </section>
-    <section>
+    </br>
       <div class="slider">
         <div class="slide-track">
           <div class="slide">
@@ -307,17 +341,15 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="sr-only sr-only-focusable Separador">
-          <div class="container-fluid">
-        <div class="row">
-            <h3 class="d-flex justify-content-center" style="color: #295861;">Experiencia</h3>
-            <p class="d-flex justify-content-center">Desde 1991 hemos desarrollado miles de aplicaciones computacionales y piezas de software para las industrias</p>
-        </div>
-    </div>
+  </div>
   </section>
-    <section >
-      <div class="container" style="text-align:center ;">
+  <!--Clientes-->
+  <!--Experiencia-->
+<section  id="experiencia" class="section pt-0" style="background-color: white;">
+  <div class="container-fluid">
+    <h6 class="section-title text-center" style="color: #295861;">Experiencia</h6>
+    <h6 class="section-subtitle text-center mb-5 pb-3">Desde 1991 hemos desarrollado miles de aplicaciones computacionales y piezas de software para las industrias.</h6>
+    <div class="container" style="text-align:center ;">
       <div class="flip">
         <div class="front" style="background-image: url(./assets/img/experiencia1.jpg)">
           <p class="text-shadow font-weight-bold" style="color: #ffffff; font-size: 22px;">Servicios para la banca</p>
@@ -345,134 +377,158 @@
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<p><b><a class="categoria">Más información</a></b> </p></p>
         </div>
       </div>
-    </div>
-    </section>
-  <section>
-    <div class="container" style="text-align:center ;">
-    <div class="flip">
-      <div class="front" style="background-image: url(./assets/img/experiencia4.jpg)">
-        <p class="text-shadow font-weight-bold" style="color: #ffffff; font-size: 22px;">Servicios para CIAS de seguro</p>
+      <div class="flip">
+        <div class="front" style="background-image: url(./assets/img/experiencia4.jpg)">
+          <p class="text-shadow font-weight-bold" style="color: #ffffff; font-size: 22px;">Servicios de logística</p>
+        </div>
+        <div class="back">
+          <h4>Servicios de logística</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<p><b><a class="categoria">Más información</a></b> </p></p>
+        </div>
       </div>
-      <div class="back">
-        <h4>Servicios para CIAS de seguro</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<p><b><a class="categoria">Más información</a></b> </p></p>
-      </div>
-    </div>
-    <div class="flip">
-      <div class="front" style="background-image: url(./assets/img/experiencia5.jpg)">
-        <p class="text-shadow font-weight-bold" style="color: #ffffff; font-size: 22px;">Integración de sistemas</p>
-      </div>
-      <div class="back">
-        <h4>Integración de sistemas</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<p><b><a class="categoria">Más información</a></b> </p></p>
+      <div class="flip">
+        <div class="front" style="background-image: url(./assets/img/experiencia5.jpg)">
+          <p class="text-shadow font-weight-bold" style="color: #ffffff; font-size: 22px;">Servicios de logística</p>
+        </div>
+        <div class="back">
+          <h4>Servicios de logística</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<p><b><a class="categoria">Más información</a></b> </p></p>
+        </div>
       </div>
     </div>
   </div>
-  </section>
-    <br/>
-    <div class="container-fluid quienes-somos">
-        <div class="container">
-            <div class="row d-flex justify-content-end">
-                <div class="col-6 quienessomos-text">
-                    <h3 class="text-center" style="color: #295861;" id="SomosId">Quienes somos</h3>
-                    <p class="text-center">Somos un grupo de 44 personas desde 22 a 60 años de edad dedicados a la construcción de aplicaciones computacionales usando mitologías ágiles y destinadas a resolver todo tipo de necesidades TI de nuestros clientes. Tenemos capacidad para construir una gran variedad de software en el mundo del proceso de datos, utilizando diferentes herramientas y siguiendo estándares en la industria TI. También acompañamos y asesoramos a nuestros clientes en todas las etapas del ciclo de vida de construcción de software, incluyendo procesos de negocio, levantamiento de requerimientos, diseño, testing, certificación y apoyo en la puesta en marcha.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br/>
+</section>
+<!--Experiencia-->
+
+<!--Quienes somos-->
+
+<section id="Quienes"  class="section pt-0" style="background-color: white;">
+  <div class="container-fluid quienes-somos">
     <div class="container">
-        <div class="row d-flex justify-content-center mt-5 mb-5">
-            <div class="col-4">
-                <h5 class="text-center" style="color: #295861;">Misión</h5>
-                <p class="text-center">Apoyar los negocios de nuestros clientes construyendo aplicaciones computacionales y entrega de servicios TI duraderos y a la vanguardía</p>
-            </div>
-            <div class="col-4">
-                <h5 class="text-center" style="color: #295861">Visión</h5>
-                <p class="text-center">Crear valor y relaciones de largo plazo con nuestros clientes, que nos permitan acompañarlos desde los servicios TI en su proceso de negocio</p>
+        <div class="row d-flex justify-content-end">
+            <div class="col-6 quienessomos-text">
+                <h3 class="text-center" style="color: #295861;" id="SomosId">Quienes somos</h3>
+                <p class="text-center">Somos un grupo de 44 personas desde 22 a 60 años de edad dedicados a la construcción de aplicaciones computacionales usando mitologías ágiles y destinadas a resolver todo tipo de necesidades TI de nuestros clientes. Tenemos capacidad para construir una gran variedad de software en el mundo del proceso de datos, utilizando diferentes herramientas y siguiendo estándares en la industria TI. También acompañamos y asesoramos a nuestros clientes en todas las etapas del ciclo de vida de construcción de software, incluyendo procesos de negocio, levantamiento de requerimientos, diseño, testing, certificación y apoyo en la puesta en marcha.</p>
             </div>
         </div>
     </div>
-    <div class="container-fluid fondo-unete">
-        <div class="container">
-            <div class="row">
-              <div class="col-4 fondo-text-unete p-4">
-                <h3 class=" d-flex justify-content-center" style="color: #295861;" id="UneteId">Trabaja con nosotros</h3>
-                <p class=" d-flex justify-content-center">Sé parte de nuestro equipo ACGP</p>
-                <div class="d-flex justify-content-center">
-                  <button type="button" class="btn btn-outline-primary">Únete al equipo ACGP</button>
-                </div>
-              </div>
-            </div>            
+</div>
+</section>
+<!--Quienes somos-->
+
+<!--visión-->
+
+<section  class="section pt-0" style="background-color: white;">
+  <div class="container">
+    <div class="row d-flex justify-content-center mt-5 mb-5">
+        <div class="col-4">
+            <h5 class="text-center" style="color: #295861;">Misión</h5>
+            <p class="text-center">Apoyar los negocios de nuestros clientes construyendo aplicaciones computacionales y entrega de servicios TI duraderos y a la vanguardía</p>
+        </div>
+        <div class="col-4">
+            <h5 class="text-center" style="color: #295861">Visión</h5>
+            <p class="text-center">Crear valor y relaciones de largo plazo con nuestros clientes, que nos permitan acompañarlos desde los servicios TI en su proceso de negocio</p>
         </div>
     </div>
-    <br/>
+  </div>
+</section>
+<!--visión-->
+
+<!--Unete-->
+
+<section id="unete"  class="section pt-0" style="background-color: white;">
+  <div class="container-fluid fondo-unete">
     <div class="container">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center mt-3 mb-4">
-              <h3 style="color: #295861;" id="ContactoId">Contactanos</h3>
+          <div class="col-4 fondo-text-unete p-4">
+            <h3 class=" d-flex justify-content-center" style="color: #295861;" id="UneteId">Trabaja con nosotros</h3>
+            <p class=" d-flex justify-content-center">Sé parte de nuestro equipo ACGP</p>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-outline-primary">Únete al equipo ACGP</button>
             </div>
-            <div class="col-6">
-              <form>
-                <div class="form-group mb-2">
-                  <label for="formGroupExampleInput">Nombre y Apellido</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group mb-2">
-                  <label for="formGroupExampleInput2">Teléfono</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group mb-2">
-                  <label for="formGroupExampleInput">Correo electrónico</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group">
-                  <label for="formGroupExampleInput2">Asunto</label>
-                  <input type="text" class="form-control">
-                </div>
-              </form>
+          </div>
+        </div>            
+    </div>
+</div>
+
+</section>
+<!--Unete-->
+
+<!--Contacto-->
+
+<section id="contacto"  class="section pt-0" style="background-color: white;">
+  <div class="container">
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center mt-3 mb-4">
+          <h3 style="color: #295861;" id="ContactoId">Contactanos</h3>
+        </div>
+        <div class="col-6">
+          <form>
+            <div class="form-group mb-2">
+              <label for="formGroupExampleInput">Nombre y Apellido</label>
+              <input type="text" class="form-control">
             </div>
-            <div class="col-6">
-              <form>
-                <div class="form-group">
-                  <label for="formGroupExampleInput">Mensaje</label>
-                  <textarea class="form-control" id="textAreaExample1" rows="10"></textarea>
-                </div>
-              </form>
+            <div class="form-group mb-2">
+              <label for="formGroupExampleInput2">Teléfono</label>
+              <input type="text" class="form-control">
             </div>
-            <div class="col-12 d-flex justify-content-center mt-4 mb-5">
-              <button type="button" class="btn btn-outline-primary">Enviar</button>
+            <div class="form-group mb-2">
+              <label for="formGroupExampleInput">Correo electrónico</label>
+              <input type="text" class="form-control">
             </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Asunto</label>
+              <input type="text" class="form-control">
+            </div>
+          </form>
+        </div>
+        <div class="col-6">
+          <form>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Mensaje</label>
+              <textarea class="form-control" id="textAreaExample1" rows="10"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="col-12 d-flex justify-content-center mt-4 mb-5">
+          <button type="button" class="btn btn-outline-primary">Enviar</button>
         </div>
     </div>
+</div>
+</section>
+<!--Contacto-->
+<!--Footer-->
 
-
-    <footer class="piedepagina">
-      <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div class="col-4">
-            <img src="./assets/img/Logo-eslogan.png">
-            <p class="d-flex justify-content-center" style="color: #ffffff; font-size: 18px;">© ACGP ingeniería de software</p>
-          </div>
-          <div class="col-4">
-            <p style="color: #ffffff;">Horario de atención</p>
-            <p style="color: #ffffff;">Lunes a Viernes de 9:00 a 19:00</p>
-            <p style="color: #ffffff;">San Antonio 19, Santiago, Chile</p>
-            <p style="color: #ffffff;">piso 10, oficinas 1001-1006</p>
-            <p style="color: #ffffff;">contacto@acgp.cl</p>
-            <p style="color: #ffffff;">(56-2) 2 638 0133</p>
-          </div>
-          <div class="col-4">
-            <p style="color: #ffffff;">Siguenos en:</p>
-            <img src="./assets/img/linkedin.png" alt="LinkedIN" width="50px;">
-          </div>
+<section  class="section pt-0" style="background-color: #00265C;">
+  <footer class="piedepagina">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-4">
+          <img src="./assets/img/Logo-eslogan.png" width="250px">
+          <p class="d-flex justify-content-center" style="color: #ffffff; font-size: 18px;">© ACGP ingeniería de software</p>
         </div>
-      </div>        
-    </footer>
+        <div class="col-4">
+          <p style="color: #ffffff;">Horario de atención</p>
+          <p style="color: #ffffff;">Lunes a Viernes de 9:00 a 19:00</p>
+          <p style="color: #ffffff;">San Antonio 19, Santiago, Chile</p>
+          <p style="color: #ffffff;">piso 10, oficinas 1001-1006</p>
+          <p style="color: #ffffff;">contacto@acgp.cl</p>
+          <p style="color: #ffffff;">(56-2) 2 638 0133</p>
+        </div>
+        <div class="col-4">
+          <p style="color: #ffffff;">Siguenos en:</p>
+          <img src="./assets/img/linkedin.png" alt="LinkedIN" width="50px;">
+        </div>
+      </div>
+    </div>        
+  </footer>
+</div>
+</section>
+<!--Footer-->
     
     <!-- Scripts -->
-    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
-    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script> -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
