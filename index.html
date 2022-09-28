@@ -38,7 +38,31 @@
 
     <!-- Isotope -->
     <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-    
+<style>
+  .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+button{
+  border-radius: 5px !important;
+  border-color: #0D6EFD !important; 
+  color: #0D6EFD !important;
+  
+}
+button:hover{
+  color: white !important;
+}
+</style>
     </head>
 <body>
     <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10" style="background: #1E3C44c0;border-color: #1E3C44c0;">
@@ -86,7 +110,6 @@
     </header> 
   <!--Servicios-->
 
-
   <section style="background-color: #ffffff;" id="service" class="section pt-0">
     <div class="container">
         <h6 class="section-title text-center" style="color: #295861;">Servicios</h6>
@@ -100,7 +123,8 @@
                           <div class="contenedor-info">
                                 <div class="info">
                                   <p class="titulo" style="font-size: 14px;">Desarrollo e integración de sistemas</p>
-                                  <a class="categoria">Más información</a>
+                                  <a class="categoria" >Más información</a>
+                                 
                                 </div>
                                 <div class="fondo"></div>
                           </div>
@@ -329,16 +353,18 @@
     <div class="container" style="text-align:center ;">
       <div class="flip">
         <div class="front" style="background-image: url(./assets/img/experiencia1.jpg)">
-          <p class="text-shadow font-weight-bold" style="color: #ffffff; font-size: 22px;">Servicios para la banca</p>
+          <p class="text-shadow font-weight-bold" style="color: #ffffff; font-size: 25px;">Servicios para la banca</p>
         </div>
         <div class="back">
           <h4>Servicios para la banca</h4>
           <p>texto sobre los servicios para la banca</p>
+          <a class="categoria" href="" data-toggle="modal" data-target="#exampleModalServicio1">Más información</a>
+
         </div>
       </div>
       <div class="flip">
         <div class="front" style="background-image: url(./assets/img/experiencia2.jpg)">
-          <p class="text-shadow font-weight-bold" style="color: #ffffff; font-size: 22px;">Servicios para el retail</p>
+          <p class="text-shadow font-weight-bold" style="color: #ffffff; font-size: 25px;">Servicios para el retail</p>
         </div>
         <div class="back">
           <h4>Servicios para el retail</h4>
@@ -347,7 +373,7 @@
       </div>
       <div class="flip">
         <div class="front" style="background-image: url(./assets/img/experiencia3.jpg)">
-          <p class="text-shadow font-weight-bold" style="color: #ffffff; font-size: 22px;">Servicios de logística</p>
+          <p class="text-shadow font-weight-bold" style="color: #ffffff; font-size: 25px;">Servicios de logística</p>
         </div>
         <div class="back">
           <h4>Servicios de logística</h4>
@@ -356,7 +382,7 @@
       </div>
       <div class="flip">
         <div class="front" style="background-image: url(./assets/img/experiencia4.jpg)">
-          <p class="text-shadow font-weight-bold" style="color: #ffffff; font-size: 22px;">Servicios para CIAS de seguro</p>
+          <p class="text-shadow font-weight-bold" style="color: #ffffff; font-size: 25px;">Servicios para CIAS de seguro</p>
         </div>
         <div class="back">
           <h4>Servicios para CIAS de seguro</h4>
@@ -365,16 +391,18 @@
       </div>
       <div class="flip">
         <div class="front" style="background-image: url(./assets/img/experiencia5.jpg)">
-          <p class="text-shadow font-weight-bold" style="color: #ffffff; font-size: 22px;">Integración de sistemas</p>
+          <p class="text-shadow font-weight-bold" style="color: #ffffff; font-size: 25px;">Integración de sistemas</p>
         </div>
         <div class="back">
           <h4>Integración de sistemas</h4>
           <p>texto sobre integración de sistemas</p>
         </div>
       </div>
+      
     </div>
   </div>
 </section>
+<section  id="experiencia" class="section pt-0" style="background-color: white;"></section>
 <!--Experiencia-->
 
 <!--Quienes somos-->
@@ -437,25 +465,25 @@
   <div class="container">
     <div class="row">
         <div class="col-12 d-flex justify-content-center mt-3 mb-4">
-          <h3 style="color: #295861;" id="ContactoId">Contactanos</h3>
+          <h3 style="color: #295861;" >Contactanos</h3>
         </div>
         <div class="col-6">
-          <form>
+          <form method="post">
             <div class="form-group mb-2">
               <label for="formGroupExampleInput">Nombre y Apellido</label>
-              <input type="text" class="form-control">
+              <input type="text" class="form-control" id="NombreId" >
             </div>
             <div class="form-group mb-2">
               <label for="formGroupExampleInput2">Teléfono</label>
-              <input type="text" class="form-control">
+              <input type="text" class="form-control" id="TelefonoId">
             </div>
             <div class="form-group mb-2">
               <label for="formGroupExampleInput">Correo electrónico</label>
-              <input type="text" class="form-control">
+              <input type="text" class="form-control" id="CorreoId"> 
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput2">Asunto</label>
-              <input type="text" class="form-control">
+              <input type="text" class="form-control" id="AsuntoId">
             </div>
           </form>
         </div>
@@ -463,12 +491,12 @@
           <form>
             <div class="form-group">
               <label for="formGroupExampleInput">Mensaje</label>
-              <textarea class="form-control" id="textAreaExample1" rows="10"></textarea>
+              <textarea class="form-control" id="textAreaExample1" rows="10" ></textarea>
             </div>
           </form>
         </div>
         <div class="col-12 d-flex justify-content-center mt-4 mb-5">
-          <button type="button" class="btn btn-outline-primary">Enviar</button>
+          <button type="button" class="btn btn-outline-primary"  onclick="sendEmail()">Enviar</button>
         </div>
     </div>
 </div>
@@ -500,6 +528,37 @@
   </footer>
 </div>
 </section>
+
+
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalServicio1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl " role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Servicio 1</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="embed-container">
+        <!-- <iframe src="https://acgpingsa-my.sharepoint.com/:p:/g/personal/jgrados_acgp_cl/EWfB9maJUd9KkXiGxJARD3EBlg9Td1CRlc6NopaC5hzIIQ"></iframe> -->
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vST3UFCzYxg9wixu8SrrYw_JkMA_3TEke43oTLv8IG8MRJ2DFrrD3URcEXrWkYqP-eO4FkhoQg3ASpj/embed?start=true&loop=false&delayms=3000" frameborder="0"  allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  
+          </div>
+        </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
 <!--Footer-->
     
     <!-- Scripts -->
@@ -507,6 +566,8 @@
     <script type="text/javascript" src="js/popper.min.js"></script> -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/email.js"></script>
+
 
 </body>
 </html>
