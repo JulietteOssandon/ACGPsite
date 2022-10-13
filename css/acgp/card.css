@@ -54,14 +54,14 @@
   background-position: center !important;
   height: 220px;
   padding: 1em 2em;
-  background: #313131;
+  background: #00265C;
   border-radius: 10px;
 }
 .flip > .front p,
 .flip > .back p {
   font-size: 0.7125rem;
   line-height: 160%;
-  color: #999;
+  color: #ffffff;
 }
 
 .text-shadow {
