@@ -149,7 +149,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	}
 }
 
-
+.section .section-subtitle {
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 0px;
+	opacity: .9;
+  }
 .quienes-somos {
 	background-image: url(../assets/img/fondo-qs.jpg);
 	background-repeat: no-repeat;

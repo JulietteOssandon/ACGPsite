@@ -11570,12 +11570,7 @@ textarea.form-control {
   padding-bottom: 140px !important;
 }
 
-.section .section-subtitle {
-  font-size: calc(13px + (13 - 13) * ((100vw - 320px) / (1200 - 320)));
-  font-weight: 500;
-  margin-bottom: 0px;
-  opacity: .9;
-}
+
 
 .section .section-title {
   font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
