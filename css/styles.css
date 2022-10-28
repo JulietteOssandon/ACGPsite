@@ -155,23 +155,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	margin-bottom: 0px;
 	opacity: .9;
   }
-.quienes-somos {
-	background-image: url(../assets/img/fondo-qs.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	height: 550px;
-}
+
+ 
 
 .quienessomos-text {
-	background-color: #ffffffcc;
-	border-radius: 10px;
 	padding: 30px;
 	margin-top: 5%;
 }
 
 .img-qs {
-	border-radius: 15px;
+	border-radius: 8px;
 	margin-top: 10%;
 }
  
