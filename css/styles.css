@@ -167,6 +167,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	border-radius: 8px;
 	margin-top: 10%;
 }
+
+.img-qs2 {
+	border-radius: 8px;
+	margin-top: 70%;
+}
  
 .fondo-unete {
 	background-image: url(../assets/img/fondo-unete-blue.jpg);
