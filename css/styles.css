@@ -155,19 +155,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	opacity: .9;
   }
 
- 
+
+@media screen and (min-width: 900px){
+	.img-qs {
+		margin-top: 25%;
+	}
+	.img-qs2 {
+		
+	margin-top: 30%;
+	}
+} 
+
+@media screen and (max-width: 400px){
+	.img-qs{
+		margin-top: 0%;
+	}
+	.img-qs2 {
+		margin-top: 0%;
+	}
+
+}
 
 .quienessomos-text {
 	margin-top: 5%;
 }
 
 .img-qs {
-	margin-top: 25%;
 	border-radius: 8px;
 }
 
 .img-qs2 {
-	margin-top: 30%;
 	border-radius: 8px;
 }
  
@@ -191,3 +208,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
+
