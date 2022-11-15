@@ -155,9 +155,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	opacity: .9;
   }
 
- 
 
-.quienessomos-text {
+@media screen {
+	
+} .quienessomos-text {
 	margin-top: 5%;
 }
 
