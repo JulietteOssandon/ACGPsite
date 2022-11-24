@@ -173,7 +173,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	.img-qs2 {
 		margin-top: 0%;
 	}
-
+	
 }
 
 .quienessomos-text {
@@ -209,3 +209,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	padding-bottom: 30px;
 }
 
+.logo-footer {
+	align-items: center;
+}
