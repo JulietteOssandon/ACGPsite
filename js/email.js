@@ -7,7 +7,7 @@ function sendEmail() {
 
     $.ajax({
         method: 'POST',
-        url: 'https://formsubmit.co/ajax/jampier54@gmail.com',
+        url: 'https://formsubmit.co/ajax/contacto@acgp.cl',
         dataType: 'json',
         accepts: 'application/json',
         data: {
