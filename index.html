@@ -489,12 +489,12 @@
           <form>
             <div class="form-group">
               <label for="formGroupExampleInput">Mensaje</label>
-              <textarea class="form-control" id="textAreaExample1" rows="10"></textarea>
+              <textarea class="form-control" id="MensajeId" rows="10" maxlength="1000"></textarea>
             </div>
           </form>
         </div>
         <div class="col-12 d-flex justify-content-center mt-4 mb-5">
-          <button type="button" class="btn btn-outline-primary" onclick="sendEmail()" >Enviar</button>
+          <button type="button" class="btn btn-outline-primary" onclick="pressbutton()">Enviar</button>
         </div>
       </div>
     </div>
@@ -539,39 +539,6 @@
 
 
 
-
-
-  <!-- Button trigger modal -->
-  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  Launch demo modal
-</button> -->
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModalServicio1" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl " role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Servicio 1</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="embed-container">
-            <!-- <iframe src="https://acgpingsa-my.sharepoint.com/:p:/g/personal/jgrados_acgp_cl/EWfB9maJUd9KkXiGxJARD3EBlg9Td1CRlc6NopaC5hzIIQ"></iframe> -->
-            <iframe
-              src="https://docs.google.com/presentation/d/e/2PACX-1vST3UFCzYxg9wixu8SrrYw_JkMA_3TEke43oTLv8IG8MRJ2DFrrD3URcEXrWkYqP-eO4FkhoQg3ASpj/embed?start=true&loop=false&delayms=3000"
-              frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-          </div>
-        </div>
-        <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> -->
-      </div>
-    </div>
-  </div>
   <!--Footer-->
 
   <!-- Scripts -->
@@ -579,8 +546,8 @@
     <script type="text/javascript" src="js/popper.min.js"></script> -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript" src="js/email.js"></script>
-
+  <script src="js/sweetalert.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 </body>
 
